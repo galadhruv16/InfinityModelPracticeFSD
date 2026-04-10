@@ -42,6 +42,37 @@ body {
   color: #f97316;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.order-btn {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease;
+}
+
+.order-btn:hover {
+  background: #ea580c;
+}
+
+.order-badge {
+  background: white;
+  color: #f97316;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
 /* HEADER */
 .header {
   text-align: center;
@@ -53,6 +84,34 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 1rem;
+}
+
+.menu-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-toolbar input {
+  flex: 1 1 240px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.menu-toolbar button {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.menu-count {
+  color: #6b7280;
+  font-size: 0.9rem;
 }
 
 /* MENU */
@@ -102,6 +161,27 @@ body {
   border: 2px solid #f97316;
 }
 
+.menu-item .item-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-item .add-btn {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.menu-item .add-btn:hover {
+  background: #1f2937;
+}
+
 /* CONTACT */
 .contact-section {
   margin-top: 3rem;
@@ -142,6 +222,13 @@ body {
 
 .contact-form button:hover {
   background: #ea580c;
+}
+
+.contact-alert {
+  margin-top: 12px;
+  color: #111827;
+  font-weight: 600;
+  min-height: 24px;
 }
 
 /* FOOTER */
