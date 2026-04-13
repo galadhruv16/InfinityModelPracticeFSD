@@ -3,6 +3,7 @@
 
 This repository is a collection of web development projects created as part of college MERN stack revision labs. The projects progress from basic HTML, CSS, and JavaScript to more advanced, interactive, and full-stack-ready applications.
 
+
 ## Repository Overview
 
 - **Project1: Personal Profile**
@@ -36,6 +37,28 @@ This repository is a collection of web development projects created as part of c
     - Add, search, and manage courses
     - Favorite marking and enrollment stats
     - Responsive design and dark mode toggle
+
+- **Project7: MediCare Connect – Health Care System**
+  - Smart health care interaction portal with event listeners for mouse, keyboard, and forms.
+  - Features:
+    - Appointment booking, department search, and activity log
+    - Modern UI with Bootstrap and dark/light mode toggle
+    - Demonstrates advanced DOM event handling
+
+- **Project8: RailReserve – Railway Reservation System**
+  - Interactive railway reservation portal with event-driven UI.
+  - Features:
+    - Train search, reservation form, and activity log
+    - Responsive Bootstrap design with dark/light mode
+    - Demonstrates form validation and event listeners
+
+- **Project9: Weather Information Portal**
+  - Real-time weather display for Mumbai using Open-Meteo API
+  - Features:
+    - Fetches weather data asynchronously using both XMLHttpRequest and Fetch API
+    - Attractive, mobile-responsive Bootstrap UI
+    - Light/dark mode toggle
+    - Demonstrates API integration and async JavaScript
 
 ## How to Use
 
