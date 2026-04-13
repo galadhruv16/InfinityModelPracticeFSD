@@ -1,0 +1,40 @@
+body.dark-mode {
+  background-color: #181a1b !important;
+  color: #f1f1f1 !important;
+}
+
+#weather-card.dark-mode {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border: 1px solid #444;
+}
+
+.navbar.bg-primary.dark-mode {
+  background-color: #23272b !important;
+}
+
+.btn-outline-light.dark-mode {
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+.card {
+  border-radius: 1.5rem;
+}
+
+#weather-info {
+  min-height: 120px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 1rem !important;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  #weather-info {
+    font-size: 1rem;
+  }
+}
