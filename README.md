@@ -58,6 +58,15 @@ This repository is a collection of web development projects created as part of c
     - Light/dark mode toggle
     - Demonstrates API integration and async JavaScript
 
+- **Project10: Weather Information Portal (REST API)**
+  - Multi-city weather dashboard using Open-Meteo REST API and geocoding
+  - Features:
+    - Add multiple cities and fetch real-time weather for each
+    - Uses REST API (with geocoding) to get weather by city name
+    - Attractive, mobile-responsive Bootstrap UI
+    - Light/dark mode toggle
+    - Demonstrates RESTful API integration, async JavaScript, and dynamic UI
+
 ## How to Use
 
 1. **Clone or Download:**  
