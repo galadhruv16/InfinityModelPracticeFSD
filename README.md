@@ -1,8 +1,6 @@
-
 # InfinityModelProjects
 
 This repository is a collection of web development projects created as part of college MERN stack revision labs. The projects progress from basic HTML, CSS, and JavaScript to more advanced, interactive, and full-stack-ready applications.
-
 
 ## Repository Overview
 
@@ -88,4 +86,3 @@ This repository is a collection of web development projects created as part of c
 ---
 
 © 2026 Dhruv Gala. All rights reserved.
-
