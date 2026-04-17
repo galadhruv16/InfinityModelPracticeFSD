@@ -1,0 +1,98 @@
+:root {
+  --portal-ink: #11252b;
+  --portal-sea: #1e4b57;
+  --portal-sky: #cce4e9;
+  --portal-sand: #f8f3e7;
+  --portal-sun: #ffc64d;
+}
+
+body {
+  margin: 0;
+  color: var(--portal-ink);
+  background: radial-gradient(
+    circle at 15% 15%,
+    #fffef9 0%,
+    #f6efe0 45%,
+    #ede2cc 100%
+  );
+}
+
+.portal-nav {
+  background: linear-gradient(120deg, #102a31, #1d4955);
+  box-shadow: 0 8px 20px rgba(16, 42, 49, 0.28);
+}
+
+.nav-link {
+  color: #d7e5ea;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero-section {
+  background: linear-gradient(145deg, #12353f 0%, #1f5a66 80%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  right: -130px;
+  top: -170px;
+  border-radius: 50%;
+  background: rgba(255, 198, 77, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.hero-panel {
+  border-radius: 16px;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.destination-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(17, 37, 43, 0.16);
+}
+
+.destination-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.contact-card {
+  background: var(--portal-sand);
+}
+
+@media (max-width: 768px) {
+  .hero-section .display-5 {
+    font-size: 2rem;
+  }
+
+  .destination-card img {
+    height: 200px;
+  }
+}

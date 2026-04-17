@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+:root {
+  --ink: #10252d;
+  --slate: #22424e;
+  --sand: #f4efe7;
+  --gold: #f4bf40;
+  --cream: #fffaf1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: radial-gradient(
+    circle at 15% 20%,
+    #fefaf2 0%,
+    #f6efe2 45%,
+    #ecdfc9 100%
+  );
+  color: var(--ink);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-shell {
+  background: linear-gradient(120deg, #0f2730, #173a46);
+  box-shadow: 0 8px 18px rgba(8, 20, 26, 0.25);
+}
+
+.brand-mark {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.nav-link {
+  color: #d8e8ec;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero-wrap {
+  background: linear-gradient(145deg, #10252d 0%, #1f3f4b 75%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wrap::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  right: -150px;
+  top: -180px;
+  background: rgba(244, 191, 64, 0.12);
+  filter: blur(2px);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.hero-card {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(2px);
+}
+
+.product-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(16, 37, 45, 0.16);
+}
+
+.product-card img {
+  height: 190px;
+  object-fit: cover;
+}
+
+.contact-card {
+  background: var(--cream);
+}
+
+@media (max-width: 767px) {
+  .hero-wrap .display-5 {
+    font-size: 2rem;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .product-card img {
+    height: 220px;
   }
 }
